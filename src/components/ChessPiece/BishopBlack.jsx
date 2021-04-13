@@ -1,7 +1,7 @@
 import React from "react"
 import Svg, { G, Path } from "react-native-svg"
 
-const Bishop = (props) => {
+const BishopBlack = (props) => {
   return (
     <Svg xmlns="http://www.w3.org/2000/svg" width={45} height={45} {...props}>
       <G
@@ -21,7 +21,7 @@ const Bishop = (props) => {
       >
         <G
           style={{
-            fill: "#ffffff",
+            fill: "#000000",
             stroke: "#000000",
             strokeLinecap: "butt",
           }}
@@ -34,7 +34,7 @@ const Bishop = (props) => {
           d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18"
           style={{
             fill: "none",
-            stroke: "#000000",
+            stroke: "#ffffff",
             strokeLinejoin: "miter",
           }}
         />
@@ -43,4 +43,4 @@ const Bishop = (props) => {
   )
 }
 
-export default Bishop
+export default BishopBlack
