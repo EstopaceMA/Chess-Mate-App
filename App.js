@@ -21,9 +21,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View style={{ backgroundColor: "#fca311", flex: 1 }} />
+      <View style={{ flex: 1 }} />
       <View style={{ backgroundColor: "#000", flex: 2}}>
-
         {position.map((rowOfPieces, rowIndex) => (
 
           <View key={rowIndex+'row'} style={{
@@ -46,7 +45,7 @@ export default function App() {
           </View>
         ))}
       </View>
-      <View style={{ backgroundColor: "green", flex: 1 }} />
+      <View style={{ flex: 1 }} />
     </View>
   );
 }
