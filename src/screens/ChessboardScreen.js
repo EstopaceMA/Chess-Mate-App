@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { View, Button, StyleSheet } from "react-native";
+
 import Screen from '../components/Screen';
-import { View, Button } from "react-native";
+import ChessPiece from '../components/ChessPiece';
 
 const initialPosition = [
   ["R", "N", "B", "Q", "K", "B", "N", "R"],
@@ -37,7 +39,7 @@ const ChessboardScreen = () => {
                       flex: 1, 
                       flexBasis: "12.5%",
                       justifyContent: "center", 
-                      backgroundColor: (colIndex % 2 === 1) ? "skyblue" : "steelblue",
+                      backgroundColor: (colIndex % 2 === 1) ? "#F7DFBD" : "#B38866",
                       alignItems: "center"
                   }}>
                     {(piece !== "") && <ChessPiece piece={piece} />}
@@ -56,5 +58,13 @@ const ChessboardScreen = () => {
       </Screen>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+      backgroundColor: "#353535",
+      flex: 1,
+      padding: 5,
+    }
+});
 
 export default ChessboardScreen;

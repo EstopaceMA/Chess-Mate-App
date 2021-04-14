@@ -1,74 +1,15 @@
-import React, { useState } from "react";
-import { StyleSheet, View, Text, Button } from "react-native";
+import React from "react";
+import { StyleSheet } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Screen from './src/components/Screen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import ChessPiece from './src/components/ChessPiece';
 
 import Icon from '@expo/vector-icons/FontAwesome5';
 import WelcomeScreen from './src/screens/WelcomeScreen';
 import AboutScreen from './src/screens/AboutScreen';
+import ChessboardScreen from './src/screens/ChessboardScreen';
 
-
-const initialPosition = [
-  ["R", "N", "B", "Q", "K", "B", "N", "R"],
-  ["P", "P", "P", "P", "P", "P", "P", "P"],
-  ["", "", "", "", "", "", "", ""],
-  ["", "", "", "", "", "", "", ""],
-  ["", "", "", "", "", "", "", ""],
-  ["", "", "", "", "", "", "", ""],
-  ["p", "p", "p", "p", "p", "p", "p", "p"],
-  ["r", "n", "b", "q", "k", "b", "n", "r"]
-];
-const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
-
-function ChessboardScreen({ navigation }) {
-  const [position] = useState(initialPosition);
-  return (
-    <Screen>
-      <View style={styles.container}>
-        <View style={{ flex: 1, justifyContent: "flex-end" }}>
-          <Button
-            title=""
-            color="#972D34"
-          />
-        </View>
-        <View style={{ backgroundColor: "#000", flex: 2}}>
-          {position.map((rowOfPieces, rowIndex) => (
-            <View key={rowIndex+'row'} style={{
-              flexDirection: (rowIndex % 2 === 1) ? "row" : "row-reverse",
-              height: "12.5%",
-            }}>
-              {rowOfPieces.map((piece, colIndex) => (
-                <View 
-                  key={rowIndex+'row'+colIndex+'col'} 
-                  style={{
-                    flex: 1, 
-                    flexBasis: "12.5%",
-                    justifyContent: "center", 
-                    backgroundColor: (colIndex % 2 === 1) ? "skyblue" : "steelblue",
-                    alignItems: "center"
-                }}>
-                  {(piece !== "") && <ChessPiece piece={piece} />}
-                </View>
-              ))}
-            </View>
-          ))}
-        </View>
-        <View style={{ flex: 1 }} >
-          <Button
-            title=""
-            color="#5C7021"
-          />
-        </View>
-      </View>
-    </Screen>
-  );
-}
-
 
 export default function App() {
   return (
