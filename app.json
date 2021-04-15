@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RayaTraining",
-    "slug": "RayaTraining",
+    "name": "ChessMate",
+    "slug": "chessmate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "My Entry for Challenge #1 of React Native training by Raya Solutions"
   }
 }

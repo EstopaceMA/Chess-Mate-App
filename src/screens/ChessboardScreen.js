@@ -36,12 +36,9 @@ const ChessboardScreen = () => {
                   <View 
                     key={rowIndex+'row'+colIndex+'col'} 
                     style={{
-                      flex: 1, 
-                      flexBasis: "12.5%",
-                      justifyContent: "center", 
+                      ...styles.pieces, 
                       backgroundColor: (colIndex % 2 === 1) ? "#F7DFBD" : "#B38866",
-                      alignItems: "center"
-                  }}>
+                    }}>
                     {(piece !== "") && <ChessPiece piece={piece} />}
                   </View>
                 ))}
@@ -64,6 +61,12 @@ const styles = StyleSheet.create({
       backgroundColor: "#353535",
       flex: 1,
       padding: 5,
+    },
+    pieces: {
+      flex: 1, 
+      flexBasis: "12.5%",
+      justifyContent: "center",
+      alignItems: "center"
     }
 });
 

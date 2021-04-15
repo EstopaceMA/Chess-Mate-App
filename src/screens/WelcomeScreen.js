@@ -1,6 +1,7 @@
 import React from 'react';
-import Screen from '../components/Screen';
 import { View, Text, StyleSheet, Image, ImageBackground } from "react-native";
+
+import Screen from '../components/Screen';
 import AppButton from '../components/AppButton';
 
 const WelcomeScreen = ({ navigation }) => {
@@ -11,16 +12,16 @@ const WelcomeScreen = ({ navigation }) => {
             style={styles.container} 
             source={require("../../assets/backgroundImage2.jpg")}
         >
-            <View style={styles.logoContainer}>
+            <View style={styles.childContainer}>
                 <Image
                     style={styles.logo} 
                     source={require("../../assets/AppLogo.png")}
                 />
-                <Text style={styles.appName}>Chess Mate</Text>    
+                <Text style={styles.appName}>♘ Chess Mate ♞</Text>
             </View>
-            <View style={styles.buttonContainer}>
-                <AppButton 
-                    title="Lets Play" 
+            <View style={styles.childContainer}>
+                <AppButton
+                    title="Lets Play"
                     onPress={() => navigation.navigate('Play')}
                 />
             </View>
@@ -31,31 +32,21 @@ const WelcomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-      backgroundColor: "#000",
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      resizeMode: 'cover',
+        flex: 1,
     },
-    buttonContainer:{
-        padding: 20,
-        width: '70%',
-        position: "absolute",
-        bottom: 100,
+    childContainer: {
+        alignItems: "center",
+        flex: 1, 
+        justifyContent: "center",
     },
     logo:{
         width:300,
         height:300,
     },
-    logoContainer:{
-        position: "absolute",
-        top: 100,
-        alignItems: "center"
-    },
     appName:{
         fontSize: 40,
-        fontWeight: "600",
-        color: "#fff",
+        fontWeight: "bold",
+        color: "#8AA832",
     }
 });
 
