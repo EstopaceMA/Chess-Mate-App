@@ -21,7 +21,7 @@ My Entry for Challenge #1 of React Native training by Raya Solutions
 
 
 ## SIMPLE KANBAN BOARD FOR THE WORK AROUND FOR THIS APP
-https://github.com/EstopaceMA/Chess-Mate-App/projects
+https://github.com/EstopaceMA/Chess-Mate-App/projects/1
 
 
 ## CREDITS
