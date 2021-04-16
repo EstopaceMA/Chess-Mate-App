@@ -18,8 +18,11 @@ My Entry for Challenge #1 of React Native training by Raya Solutions
 - ### Main Screen (Chessboard UI)
 <img src="https://github.com/EstopaceMA/Chess-Mate-App/blob/main/assets/screenshots/chess-board-screen.jpg" width="190" height="400"/>
 
-- ### Main Screen (Chessboard UI)
+- ### About Screen
 <img src="https://github.com/EstopaceMA/Chess-Mate-App/blob/main/assets/screenshots/about-screen.jpg" width="190" height="400"/>
+
+## SIMPLE KANBAN BOARD FOR THE WORK AROUND FOR THIS APP
+https://github.com/EstopaceMA/Chess-Mate-App/projects/1
 
 
 ## SCAN THIS QR FOR DEMO
