@@ -10,14 +10,14 @@ const WelcomeScreen = ({ navigation }) => {
         <ImageBackground
             blurRadius={2}
             style={styles.container} 
-            source={require("../../assets/backgroundImage2.jpg")}
+            source={require("../../assets/bg-img.jpg")}
         >
             <View style={styles.childContainer}>
                 <Image
                     style={styles.logo} 
                     source={require("../../assets/AppLogo.png")}
                 />
-                <Text style={styles.appName}>♘ Chess Mate ♞</Text>
+                <Text allowFontScaling={false} style={styles.appName}>♘ Chess Mate ♞</Text>
             </View>
             <View style={styles.childContainer}>
                 <AppButton

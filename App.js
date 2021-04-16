@@ -3,11 +3,9 @@ import { StyleSheet } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import Icon from '@expo/vector-icons/FontAwesome5';
-import WelcomeScreen from './src/screens/WelcomeScreen';
-import AboutScreen from './src/screens/AboutScreen';
-import ChessboardScreen from './src/screens/ChessboardScreen';
+
+import { AboutScreen,ChessboardScreen,WelcomeScreen } from './src/screens';
 
 const Tab = createBottomTabNavigator();
 
